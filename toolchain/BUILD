@@ -14,7 +14,6 @@ cc_toolchain_suite(
 filegroup(
     name = "all",
     srcs = [
-        "emcc.sh",
         "@carwos_sdk//:all",
     ],
 )

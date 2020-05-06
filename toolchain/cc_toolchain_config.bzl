@@ -5,11 +5,11 @@ def _impl(ctx):
     tool_paths = [
         tool_path(
             name = "gcc",
-            path = "emcc.sh",
+            path = "/usr/bin/gcc",
         ),
         tool_path(
             name = "ld",
-            path = "emcc.sh",
+            path = "/usr/bin/ld",
         ),
         tool_path(
             name = "ar",
@@ -38,10 +38,10 @@ def _impl(ctx):
     ]
     return cc_common.create_cc_toolchain_config_info(
         ctx = ctx,
-        toolchain_identifier = "asmjs-toolchain",
-        host_system_name = "i686-unknown-linux-gnu",
-        target_system_name = "asmjs-unknown-emscripten",
-        target_cpu = "asmjs",
+        toolchain_identifier = "carwos-toolchain",
+        host_system_name = "atom-unknown-linux-gnu",
+        target_system_name = "carwos-unknown-emscripten",
+        target_cpu = "atom",
         target_libc = "unknown",
         compiler = "emscripten",
         abi_version = "unknown",
