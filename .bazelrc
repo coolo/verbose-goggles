@@ -1,12 +1,10 @@
 # Use our custom-configured c++ toolchain.
 
-build:asmjs --crosstool_top=//toolchain:emscripten
+build:carwos --crosstool_top=//toolchain:carwos
 
-# Use --cpu as a differentiator.
-
-build:asmjs --cpu=asmjs
+build:carwos --cpu=atom
 
 # Use the default Bazel C++ toolchain to build the tools used during the
 # build.
 
-build:asmjs --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
+build:carwos --host_crosstool_top=@bazel_tools//tools/cpp:toolchain

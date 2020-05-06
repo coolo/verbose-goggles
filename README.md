@@ -2,4 +2,4 @@ Based on bazel example and patched according https://docs.bazel.build/versions/m
 and then followed to patch to use carwos sdk
 
 Try
-bazel build --sandbox_debug --config=asmjs --verbose_failures //main:helloworld.js
+bazel build --sandbox_debug --config=carwos --verbose_failures //main:hello-world
