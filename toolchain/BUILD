@@ -12,9 +12,9 @@ cc_toolchain_suite(
 )
 
 filegroup(
-    name = "all",
+    name = "allsdk",
     srcs = [
-        "@carwos_sdk//:all",
+        "@carwos_sdk//:all"
     ],
 )
 
@@ -22,10 +22,10 @@ cc_toolchain(
     name = "carwos_toolchain",
     toolchain_identifier = "carwos-toolchain",
     toolchain_config = ":carwos_toolchain_config",
-    all_files = ":all",
-    compiler_files = ":all",
+    all_files = ":allsdk",
+    compiler_files = ":allsdk",
     dwp_files = ":empty",
-    linker_files = ":all",
+    linker_files = ":allsdk",
     objcopy_files = ":empty",
     strip_files = ":empty",
     supports_param_files = 0,

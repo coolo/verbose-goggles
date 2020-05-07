@@ -5,11 +5,11 @@ def _impl(ctx):
     tool_paths = [
         tool_path(
             name = "gcc",
-            path = "/usr/bin/gcc",
+            path = "carwos-gcc",
         ),
         tool_path(
             name = "ld",
-            path = "/usr/bin/ld",
+            path = "carwos-ld",
         ),
         tool_path(
             name = "ar",

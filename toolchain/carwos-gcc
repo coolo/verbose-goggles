@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "HALL"
+exec external/carwos_sdk/usr/bin/gcc ${1+"$@"}
