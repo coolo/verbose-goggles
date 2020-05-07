@@ -71,7 +71,7 @@ def _impl(ctx):
                 flag_groups = [
                     flag_group(
                         flags = [
-                            "--sysroot=external/xpad_dnv_gcc_toolchain",
+                            "--sysroot=external/carwos_sdk",
                             "-m64",
                             "-mfpmath=sse",
                             "-msse4.2",
@@ -166,7 +166,7 @@ def _impl(ctx):
                 flag_groups = [
                     flag_group(
                         flags = [
-                            "--sysroot=external/xpad_dnv_gcc_toolchain",
+                            "--sysroot=external/carwos_sdk",
                             "-lstdc++",
                             "-Wl,--dynamic-linker=external/xpad_dnv_gcc_toolchain/lib64/ld-linux-x86-64.so.2",
                             "-fPIC",
