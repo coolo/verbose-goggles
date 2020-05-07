@@ -168,7 +168,7 @@ def _impl(ctx):
                         flags = [
                             "--sysroot=external/carwos_sdk",
                             "-lstdc++",
-                            "-Wl,--dynamic-linker=external/xpad_dnv_gcc_toolchain/lib64/ld-linux-x86-64.so.2",
+                            "-Wl,--dynamic-linker=external/carwos_sdk/lib64/ld-linux-x86-64.so.2",
                             "-fPIC",
                             "-lm",
                             "-ldl",
