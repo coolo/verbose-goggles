@@ -4,8 +4,8 @@ def carwos_sdk():
     if "carwos_sdk" not in native.existing_rules():
         http_archive(
             name = 'carwos_sdk',
-            url = 'https://stephan.kulow.org/sdk-without-glibc.tar.xz',
+            url = 'https://download.opensuse.org/repositories/home:/coolo:/carwos/standard/image.sdk-1.0-17.1.tar.xz',
             build_file = '//:carwos_sdk.BUILD',
-            sha256 = '0bbeaa89f2c7ef2416221d4c3a8447b7daf7192292becad625d8f3d32bb9ccd1',
+            sha256 = "6b6922a8c3861f20294c4ffe082dfa6e396799271a2c46b265df7addcaff4bbf",
             strip_prefix = "sdk",
         )
