@@ -3,7 +3,7 @@
 THIS_DIR=$(dirname "$0")
 SDK_PATH=external/carwos_sdk
 
-LD_LIBRARY_PATH=${SDK_PATH}/usr/lib64
+export LD_LIBRARY_PATH=${SDK_PATH}/usr/lib64
 
 exec "${SDK_PATH}"/usr/bin/gcc \
   -B "${THIS_DIR}" \
