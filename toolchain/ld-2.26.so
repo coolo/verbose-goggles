@@ -1,0 +1,10 @@
+#!/bin/sh
+
+SDK_PATH=external/carwos_sdk
+
+LD_LIBRARY_PATH=${SDK_PATH}/usr/lib64:${SDK_PATH}/lib64
+
+exec "${SDK_PATH}"/lib64/ld-2.26.so \
+  --inhibit-cache --inhibit-rpath '' \
+  --library-path "${SDK_PATH}/lib64:${SDK_PATH}/usr/lib64" \
+  "${@}"

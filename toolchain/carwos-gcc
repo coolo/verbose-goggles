@@ -1,3 +1,11 @@
-#!/bin/sh
-echo "HALL"
-exec external/carwos_sdk/usr/bin/gcc ${1+"$@"}
+#!/bin/bash -x
+
+THIS_DIR=$(dirname "$0")
+SDK_PATH=external/carwos_sdk
+
+LD_LIBRARY_PATH=${SDK_PATH}/usr/lib64:${SDK_PATH}/lib64
+
+exec "${SDK_PATH}"/usr/bin/gcc \
+  -B "${THIS_DIR}" \
+  -wrapper "${THIS_DIR}"/ld-2.26.so \
+  "${@}"

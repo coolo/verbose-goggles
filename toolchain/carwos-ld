@@ -1,2 +1,1 @@
-#!/bin/sh
-exec external/carwos_sdk/usr/bin/gcc ${1+"$@"}
+binwrapper

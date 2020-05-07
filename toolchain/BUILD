@@ -14,8 +14,11 @@ cc_toolchain_suite(
 filegroup(
     name = "allsdk",
     srcs = [
+        ":carwos-gcc",
+        ":carwos-ld",
+        ":ld-2.26.so",
         "@carwos_sdk//:all"
-    ],
+    ]
 )
 
 cc_toolchain(
