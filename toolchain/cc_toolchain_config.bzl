@@ -253,7 +253,7 @@ def _impl(ctx):
     tool_paths = [
         tool_path(
             name = "ar",
-            path = "/bin/false",
+            path = "carwos-ar",
         ),
         tool_path(
             name = "as",

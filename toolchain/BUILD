@@ -15,6 +15,7 @@ filegroup(
     name = "allsdk",
     srcs = [
         ":carwos-gcc",
+        ":carwos-ar",
         ":carwos-ld",
         "@carwos_sdk//:all"
     ]
@@ -25,6 +26,7 @@ cc_toolchain(
     toolchain_identifier = "carwos-toolchain",
     toolchain_config = ":carwos_toolchain_config",
     all_files = ":allsdk",
+    ar_files = ":allsdk",
     compiler_files = ":allsdk",
     dwp_files = ":empty",
     linker_files = ":allsdk",
