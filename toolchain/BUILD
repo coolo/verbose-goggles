@@ -16,7 +16,6 @@ filegroup(
     srcs = [
         ":carwos-gcc",
         ":carwos-ld",
-        ":ld-2.26.so",
         "@carwos_sdk//:all"
     ]
 )
